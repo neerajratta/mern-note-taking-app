@@ -37,29 +37,32 @@ The backend server will run on http://localhost:5000.
 
 **API Endpoints**
 
-1. **Create a Note**
 
-	### •	Endpoint: POST /api/notes
-**•	Request Body:**
-*
+1.	**Create a Note**
+### •	Endpoint: POST /api/notes
+**Request Body**
+
+    *
      ```bash
-   {
-    "title": "Note Title",
-    "content": "This is the content of the note."
-    }
-    
+    {
+            "title": "Note Title",
+            "content": "This is the content of the note."
+        }
+        
 
 **Response**
+
+    *
      ```bash
    [
-        {
-            "id": "unique_note_id",
-            "title": "Note Title",
-            "content": "This is the content of the note.",
-            "catfact": "Random cat fact."
-        }
-    ]
-    
+            {
+                "id": "unique_note_id",
+                "title": "Note Title",
+                "content": "This is the content of the note.",
+                "catfact": "Random cat fact."
+            }
+        ]
+
 2.	**Retrieve All Notes**
 ### •	Endpoint: GET /api/notes 
 **Response**
