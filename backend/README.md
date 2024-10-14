@@ -80,11 +80,13 @@ The backend server will run on http://localhost:5000.
 
 3.	**Delete a Note**
 ### •	Endpoint: DELETE /api/notes/:id
-    
+*
      ```bash
-     {
-        "message": "Note deleted successfully."
-        }
+     
+            {
+                "message": "Note deleted successfully."
+            }
+        
 
 4.	**Search for Notes**
 ### •	Endpoint: GET /api/notes/search?query=search_term
