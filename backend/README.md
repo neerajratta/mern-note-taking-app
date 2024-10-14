@@ -41,30 +41,28 @@ The backend server will run on http://localhost:5000.
 
 	### •	Endpoint: POST /api/notes
 	**•	Request Body:**
-
-```{
+       ```bash
+   {
     "title": "Note Title",
     "content": "This is the content of the note."
-    }```
-
-
-	** •	Response: **
-
-```{
-    "id": "unique_note_id",
-    "title": "Note Title",
-    "content": "This is the content of the note.",
-    "catfact": "Random cat fact."
     }
 
-
-
-2. ** Retrieve All Notes **
-
-	### •	Endpoint: GET /api/notes
-	** •	Response: **
-
-``` [
+**Response**
+     ```bash
+   [
+        {
+            "id": "unique_note_id",
+            "title": "Note Title",
+            "content": "This is the content of the note.",
+            "catfact": "Random cat fact."
+        }
+    ]
+    
+2.	**Retrieve All Notes**
+### •	Endpoint: GET /api/notes 
+**Response**
+     ```bash
+   [
         {
             "id": "unique_note_id",
             "title": "Note Title",
@@ -73,25 +71,19 @@ The backend server will run on http://localhost:5000.
         }
     ]
 
-
-
-3. ** Delete a Note **
-
-	### •	Endpoint: DELETE /api/notes/:id
-	**  •	Response: **
-
-    ``` {
+3.	**Delete a Note**
+### •	Endpoint: DELETE /api/notes/:id
+*
+     ```bash
+   {
         "message": "Note deleted successfully."
         }
 
-
-
-4. ** Search for Notes**
-
-	### •	Endpoint: GET /api/notes/search?query=search_term
-	**  •	Response: **
-
-    ``` [
+4.	**Search for Notes**
+### •	Endpoint: GET /api/notes/search?query=search_term
+*
+     ```bash
+   [
             {
                 "id": "unique_note_id",
                 "title": "Note Title",
@@ -100,16 +92,10 @@ The backend server will run on http://localhost:5000.
             }
         ]
 
-
-
-** Error Handling ** 
+**Error Handling**
 
 	•	The server implements error handling for all endpoints, returning relevant status codes and error messages.
 
-Contribution
+**Contribution**
 
 Feel free to contribute by creating issues or submitting pull requests!
-
-License
-
-This project is licensed under the MIT License.
