@@ -43,7 +43,8 @@ The backend server will run on http://localhost:5000.
 **Request Body**
 
     
-     ```bash{
+     ```bash
+     {
             "title": "Note Title",
             "content": "This is the content of the note."
         }
@@ -52,7 +53,8 @@ The backend server will run on http://localhost:5000.
 **Response**
 
     
-     ```bash[
+     ```bash
+     [
             {
                 "id": "unique_note_id",
                 "title": "Note Title",
@@ -67,7 +69,7 @@ The backend server will run on http://localhost:5000.
 
     *
      ```bash
-   [
+     [
             {
                 "id": "unique_note_id",
                 "title": "Note Title",
@@ -80,7 +82,7 @@ The backend server will run on http://localhost:5000.
 ### •	Endpoint: DELETE /api/notes/:id
     
      ```bash
-   {
+     {
         "message": "Note deleted successfully."
         }
 
@@ -88,7 +90,7 @@ The backend server will run on http://localhost:5000.
 ### •	Endpoint: GET /api/notes/search?query=search_term
 *
      ```bash
-   [
+     [
             {
                 "id": "unique_note_id",
                 "title": "Note Title",
