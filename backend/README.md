@@ -42,15 +42,15 @@ The backend server will run on http://localhost:5000.
 	### •	Endpoint: POST /api/notes
 	**•	Request Body:**
 
-``` {
+```{
     "title": "Note Title",
     "content": "This is the content of the note."
-    }
+    }```
 
 
 	** •	Response: **
 
-``` {
+```{
     "id": "unique_note_id",
     "title": "Note Title",
     "content": "This is the content of the note.",
