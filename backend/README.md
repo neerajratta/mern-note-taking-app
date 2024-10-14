@@ -40,12 +40,14 @@ The backend server will run on http://localhost:5000.
 1. **Create a Note**
 
 	### •	Endpoint: POST /api/notes
-	**•	Request Body:**
-       ```bash
+**•	Request Body:**
+*
+     ```bash
    {
     "title": "Note Title",
     "content": "This is the content of the note."
     }
+    
 
 **Response**
      ```bash
@@ -61,15 +63,17 @@ The backend server will run on http://localhost:5000.
 2.	**Retrieve All Notes**
 ### •	Endpoint: GET /api/notes 
 **Response**
+
+    *
      ```bash
    [
-        {
-            "id": "unique_note_id",
-            "title": "Note Title",
-            "content": "This is the content of the note.",
-            "catfact": "Random cat fact."
-        }
-    ]
+            {
+                "id": "unique_note_id",
+                "title": "Note Title",
+                "content": "This is the content of the note.",
+                "catfact": "Random cat fact."
+            }
+        ]
 
 3.	**Delete a Note**
 ### •	Endpoint: DELETE /api/notes/:id
@@ -94,7 +98,7 @@ The backend server will run on http://localhost:5000.
 
 **Error Handling**
 
-	•	The server implements error handling for all endpoints, returning relevant status codes and error messages.
+The server implements error handling for all endpoints, returning relevant status codes and error messages.
 
 **Contribution**
 
