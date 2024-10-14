@@ -41,8 +41,7 @@ The backend server will run on http://localhost:5000.
 1.	**Create a Note**
 ### •	Endpoint: POST /api/notes
 **Request Body**
-
-    *
+    
      ```bash
     {
             "title": "Note Title",
@@ -51,8 +50,7 @@ The backend server will run on http://localhost:5000.
         
 
 **Response**
-
-    *
+    
      ```bash
    [
             {
@@ -66,8 +64,7 @@ The backend server will run on http://localhost:5000.
 2.	**Retrieve All Notes**
 ### •	Endpoint: GET /api/notes 
 **Response**
-
-    *
+    
      ```bash
    [
             {
@@ -80,7 +77,7 @@ The backend server will run on http://localhost:5000.
 
 3.	**Delete a Note**
 ### •	Endpoint: DELETE /api/notes/:id
-*
+    
      ```bash
    {
         "message": "Note deleted successfully."
